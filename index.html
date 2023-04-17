@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+   <title> Creating a Website Note </title> 
+   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+ 
+  <body>
+  <h1> Meeting notes</h1>
+    <header>  Navigations   </header>
+      <nav>
+          <a href="#">All Notes</a> |
+          <a href="#">Members</a> |
+          <a href="#">Deadlines</a> |
+          <a href="#">Current Projects</a> |
+      </nav>
+
+     <div> 
+      <h2> Today's notes</h2>
+      <img src="meetingPic.jpg" alt="people in a meeting picture" width="200" height="200">
+     </div> 
+
+      <main> 
+     <section> 
+         <article> 
+      <p> <strong> Our goal: </strong> </p>
+    <p> For today's meeting to go over the importance of how to use different HTML elements to create a web page. <br> And learn how to use them and how each of these different elements work.
+    </p>
+
+   <hr>
+    <p>During the meeting, the team learned many useful html elements such as header/footer, section and heading.</p>
+   <hr>
+    <span> Recording and audio from the meeting</span>
+    <audio controls src="cse110_lab2_audio.mp3"> </audio>
+    <video controls src ="cse110_lab2_movie.mp4"  width="200" height="200"> </video>
+        </article>
+    </section>
+
+  <section>
+  <h3>Todo list:</h3> 
+  <details> 
+    <summary> <em> make sure to finish these before next meeting </em>  </summary>
+    <ol> <li> list items </li>
+        <li> list items </li>
+        <li> list items </li>
+        <li> list items </li>
+        <li> list items </li>
+    </ol>
+    </details>
+</section>
+
+    <section>
+    <h4> <i> Things </i> to go over next time:  </h4>
+    <ul> 
+        <li> <b> CSS </b> </li>
+        <li> Project ideas </li>
+         </ul>
+    </section>
+</main>
+
+    <h4> Forms </h4>
+        <form >
+            <fieldset> 
+            First name: <input type = "text" name = "first_name" />
+            <br>
+            Last name: <input type = "text" name = "last_name" />
+            </fieldset>
+            <p> Text Area</p>
+            <textarea rows = "5" cols = "50" name = "description">
+               Write something 
+             </textarea>
+             <label for="fruits">Choose your fruits from the list:</label>
+                <input list="fruits" name="fruit" id="fruit">
+                    <datalist id="fruits">
+                        <option value="Apple">
+                        <option value="Mango">
+                        <option value="Peach">
+                    </datalist>
+                    <input type="button" value="click me!"" />
+                    <br>             
+                 <label for="colors">Choose a color:</label>
+                    <select name="colors" id="colors">
+                        <option value="purple">Purple</option>
+                        <option value="pink">Pink</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                    </select>
+
+
+        </form>
+
+
+    <footer>
+        <p>Author: Bao Thy Nguyen</p>
+        <p><a href="mailto:someEmail@email.com">someEmail@email.com</a></p>
+      </footer>
+  </body>
+</html>
+
