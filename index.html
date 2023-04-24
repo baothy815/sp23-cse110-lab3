@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8">
    <title> Creating a Website Note </title> 
+   <link rel="stylesheet" href="style.css"> 
    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   </head>
  
   <body>
-  <h1> Meeting notes</h1>
+  <h1 style="font-size: 30pt;color:rgb(98, 99, 255);text-align:center;"> Meeting notes</h1>
     <header>  Navigations   </header>
       <nav>
           <a href="#">All Notes</a> |
@@ -16,7 +20,7 @@
           <a href="#">Current Projects</a> |
       </nav>
 
-     <div> 
+     <div class="static"> 
       <h2> Today's notes</h2>
       <img src="meetingPic.jpg" alt="people in a meeting picture" width="200" height="200">
      </div> 
@@ -25,11 +29,12 @@
      <section> 
          <article> 
       <p> <strong> Our goal: </strong> </p>
-    <p> For today's meeting to go over the importance of how to use different HTML elements to create a web page. <br> And learn how to use them and how each of these different elements work.
+    <p id="firstPara"> For today's meeting to go over the importance of how to use different HTML elements to create a web page. <br> And learn how to use them and how each of these different elements work. 
     </p>
-
+    <p id="anotherSentnce"> Therefore, we hope to accomplish these goals after the meeting ends.</p>
+    
    <hr>
-    <p>During the meeting, the team learned many useful html elements such as header/footer, section and heading.</p>
+    <p id="secondPara">During the meeting, the team learned many useful html elements such as header/footer, section and heading.</p>
    <hr>
     <span> Recording and audio from the meeting</span>
     <audio controls src="cse110_lab2_audio.mp3"> </audio>
@@ -47,10 +52,11 @@
         <li> list items </li>
         <li> list items </li>
     </ol>
+    <p> *if you aren't done then please tell us why</p>
     </details>
 </section>
 
-    <section>
+    <section class="list">
     <h4> <i> Things </i> to go over next time:  </h4>
     <ul> 
         <li> <b> CSS </b> </li>
@@ -59,7 +65,7 @@
     </section>
 </main>
 
-    <h4> Forms </h4>
+    <h5> Forms </h5>
         <form >
             <fieldset> 
             First name: <input type = "text" name = "first_name" />
@@ -89,12 +95,28 @@
 
 
         </form>
+        <p> Grid Layout </p>
+        <div id="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+          </div>
+
+          <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+            <div>4</div>  
+          </div>
 
 
     <footer>
-        <p>Author: Bao Thy Nguyen</p>
+      <div class="fixed"> 
+        <p >Author: Bao Thy Nguyen</p>
         <p><a href="mailto:someEmail@email.com">someEmail@email.com</a></p>
-      </footer>
+    </div>
+    </footer>
   </body>
 </html>
 

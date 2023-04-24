@@ -1,0 +1,119 @@
+/* mouse over link */
+a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: green;
+  }
+  a[href*="o"] {
+    color: burlywood;
+  }
+h2{
+    text-align: center;
+    color: rgba(255, 162, 0, 0.976);
+    text-decoration: solid;
+}
+div.static {
+    position: static;
+    font-size: 2ch;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: lightskyblue;
+
+}
+li *{
+    color: palevioletred;
+}
+strong{
+    font-size: 19pt;
+    margin: 25px 70px 9px 250px;
+
+}
+#firstPara {
+    color: #5f7ecc;
+    padding: 25px 50px 75px 100px;
+    font-size: 0.5cm;
+    display: inline;
+  }
+#anotherSentence{
+    display: inherit;
+}
+
+#secondPara{
+    border: 1px solid lightblue; 
+    display: block;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    font-size: 1.13rem;
+}
+span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 70px;
+    
+    font-size: 1.5em;
+  }
+header{
+    font-size: 2pc;
+    color: hsl(0, 100%, 86%);
+    margin: auto;
+
+}
+
+section {
+    border-width: 650px;
+    padding: 10px;
+    border: 5px solid white;
+    margin: 3;
+}
+ol + p{
+    color:palevioletred;
+}
+h3, h4{
+    font-size: 21pt;
+}
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 3;
+    width: 200px;
+    border: 1px solid #73AD21;
+  }
+body {
+    background-color: paleturquoise;
+    font-family: "Open Sans", "PT Sans", Calibri, Tahoma, sans-serif;
+  }
+
+  #container {
+    display: grid;
+    grid: repeat(2, 60px) / auto-flow 80px;
+  }
+  
+  #container > div {
+    background-color: #8ca0ff;
+    width: 60px;
+    height: 50px;
+  }
+
+  .flex-container  {
+    display: flex;
+    background-color: yellowgreen;
+  }
+  
+  .flex-container div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  @media screen and (min-width: 480px) {
+    body {
+      background-color: linen ;
+    }
+  }
